@@ -29,7 +29,7 @@ public class IntegerTypeHandler extends TypeHandler {
     public boolean checkType(Class<?> clazz) {
         return Optional.ofNullable(clazz)
                 .filter(c -> clazz.equals(Integer.class) || clazz.equals(int.class))
-                .map(c -> true)
-                .orElse(false);
+                .map(c -> Boolean.TRUE)
+                .orElse(Boolean.FALSE);
     }
 }

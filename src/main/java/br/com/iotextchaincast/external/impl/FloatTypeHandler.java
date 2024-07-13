@@ -33,7 +33,7 @@ public class FloatTypeHandler extends TypeHandler {
     public boolean checkType(Class<?> clazz) {
         return Optional.ofNullable(clazz)
                 .filter(c -> clazz.equals(Float.class) || clazz.equals(float.class))
-                .map(c -> true)
-                .orElse(false);
+                .map(c -> Boolean.TRUE)
+                .orElse(Boolean.FALSE);
     }
 }

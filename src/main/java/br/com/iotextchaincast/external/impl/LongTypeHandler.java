@@ -29,7 +29,7 @@ public class LongTypeHandler extends TypeHandler {
     public boolean checkType(Class<?> clazz) {
         return Optional.ofNullable(clazz)
                 .filter(c -> clazz.equals(Long.class) || clazz.equals(long.class))
-                .map(c -> true)
-                .orElse(false);
+                .map(c -> Boolean.TRUE)
+                .orElse(Boolean.FALSE);
     }
 }

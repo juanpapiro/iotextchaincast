@@ -28,7 +28,7 @@ public class StringTypeHandler extends TypeHandler {
     public boolean checkType(Class<?> clazz) {
         return Optional.ofNullable(clazz)
                 .filter(c -> clazz.equals(String.class))
-                .map(c -> true)
-                .orElse(false);
+                .map(c -> Boolean.TRUE)
+                .orElse(Boolean.FALSE);
     }
 }

@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @ToString
 public class Example {
 
+    private static final String MESSAGE = "Classe de exemplo de cast";
 
     @IOTextChainCast(length = 2, order = 1, align = "R", trelling = "0")
     private Integer numInteger;
@@ -51,6 +53,7 @@ public class Example {
     @IOTextChainCast(length = 15, order = 11, align = "R", trelling = "0",
             decimalPrecision = 3, decimalMovePoint = 3)
     private float floatValuePrimitive;
+
 
 
 }

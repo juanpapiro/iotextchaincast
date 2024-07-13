@@ -31,7 +31,7 @@ public class DoubleTypeHandler extends TypeHandler {
     public boolean checkType(Class<?> clazz) {
         return Optional.ofNullable(clazz)
                 .filter(c -> clazz.equals(Double.class) || clazz.equals(double.class))
-                .map(c -> true)
-                .orElse(false);
+                .map(c -> Boolean.TRUE)
+                .orElse(Boolean.FALSE);
     }
 }
