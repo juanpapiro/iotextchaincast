@@ -12,7 +12,7 @@
 
 	<groupId>br.com</groupId>
 	<artifactId>iotextchaincast</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>iochaincast</name>
 	<description>Projeto para conversão de string para objet e objeto para string</description>
 
